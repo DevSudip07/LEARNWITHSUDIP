@@ -117,6 +117,24 @@
         }
     }
 
+    /* ======== YOUTUBE ======== */
+    .yt-container {
+        background-image: url(./img/YOUTUBE\ MOBILE\ BG.png);
+    }
+
+    .swiper {
+        width: 90%;
+        height: 35vh;
+        left: 0px;
+        top: 280px;
+    }
+
+    .swiper-slide iframe {
+        width: 100% !important;
+        height: 35vh !important;
+    }
+
+
     /* ======== FEEDBACKS ======== */
     .review-container {
         width: 100%;

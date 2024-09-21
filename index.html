@@ -17,6 +17,8 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- ============= AOS ANIMATION CDN ============= -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body onload="load()">
@@ -35,322 +37,390 @@
         </div>
     </section>
 
-    <!-- ======== NAVBER MOBILE ======== -->
-    <header>
-        <div class="logo">
-            <a href="">
-                <h2>Learn With Sudip</h2>
-            </a>
-        </div>
-        <h1><i class="fa-solid fa-bars"></i></h1>
-    </header>
-    <aside>
-        <h1><i class="fa-solid fa-xmark"></i></h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li>
-                <div class="drop-down">
-                    <h3 class="services-menu">Services <span><i class="fa-solid fa-chevron-down"></i></span></h3>
-                    <div class="drop">
-                        <a href="">Web Development</a><br>
-                        <a href="">UI/UX Design</a><br>
-                        <a href="">Digital Marketing</a><br>
-                        <a href="">Tutorial</a><br>
+    <main>
+        <!-- ======== NAVBER MOBILE ======== -->
+        <header>
+            <div class="logo">
+                <a href="">
+                    <h2>Learn With Sudip</h2>
+                </a>
+            </div>
+            <h1><i class="fa-solid fa-bars"></i></h1>
+        </header>
+        <aside>
+            <h1><i class="fa-solid fa-xmark"></i></h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <div class="drop-down">
+                        <h3 class="services-menu">Services <span><i class="fa-solid fa-chevron-down"></i></span></h3>
+                        <div class="drop">
+                            <a href="">Web Development</a><br>
+                            <a href="">UI/UX Design</a><br>
+                            <a href="">Digital Marketing</a><br>
+                            <a href="">Tutorial</a><br>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li><a href="#projects">Projects</a></li>
-            <button class="btn-1">Contact <i class="fa-solid fa-phone-volume"></i></button>
-        </ul>
-    </aside>
-    <!-- ======== NAVBER DESKTOP ======== -->
-    <nav>
-        <div class="logo">
-            <a href="">
-                <h2>Learn With Sudip</h2>
-            </a>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li>
-                <div class="drop-down">
-                    <a href="" class="services-menu">Services <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="drop">
-                        <a href="">Web Development</a><br>
-                        <a href="">UI/UX Design</a><br>
-                        <a href="">Digital Marketing</a><br>
-                        <a href="">Tutorial</a><br>
+                </li>
+                <li><a href="#projects">Projects</a></li>
+                <button class="btn-1">Contact <i class="fa-solid fa-phone-volume"></i></button>
+            </ul>
+        </aside>
+        <!-- ======== NAVBER DESKTOP ======== -->
+        <nav>
+            <div class="logo">
+                <a href="">
+                    <h2>Learn With Sudip</h2>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <div class="drop-down">
+                        <a href="" class="services-menu">Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="drop">
+                            <a href="">Web Development</a><br>
+                            <a href="">UI/UX Design</a><br>
+                            <a href="">Digital Marketing</a><br>
+                            <a href="">Tutorial</a><br>
+                        </div>
                     </div>
+                </li>
+                <li><a href="#projects">Projects</a></li>
+                <button class="btn-1">Contact <i class="fa-solid fa-phone-volume"></i></button>
+            </ul>
+        </nav>
+        <!-- ======== BANNER ======== -->
+        <section id="home">
+            <div class="banner">
+                <div class="banner-content">
+                    <h1>Hello Friends!</h1>
+                    <h2>Myself Sudip</h2>
+                    <h3>I'm a <span class="proff"></span></h3>
+                    <p>It is a long established fact that a reader will be distracted
+                        <br>by the readable content of a page when looking at its layout. 
+                    </p>
                 </div>
-            </li>
-            <li><a href="#projects">Projects</a></li>
-            <button class="btn-1">Contact <i class="fa-solid fa-phone-volume"></i></button>
-        </ul>
-    </nav>
-    <!-- ======== BANNER ======== -->
-    <section id="home">
-        <div class="banner">
-            <div class="banner-content">
-                <h1>Hello Friends!</h1>
-                <h2>Myself Sudip</h2>
-                <h3>I'm a <span class="proff"></span></h3>
-                <p>It is a long established fact that a reader will be distracted
-                    <br>by the readable content of a page when looking at its layout. 
-                </p>
+                <div class="banner-img">
+                    <img src="./img/banner-img.png" alt="">
+                </div>
             </div>
-            <div class="banner-img">
-                <img src="./img/banner-img.png" alt="">
+        </section>
+        <!-- ======== ABOUT ======== -->
+        <section id="about">
+            <div class="title">
+                <h2>ABOUT ME</h2>
             </div>
-        </div>
-    </section>
-    <!-- ======== ABOUT ======== -->
-    <section id="about">
-        <div class="title">
-            <h2>ABOUT ME</h2>
-        </div>
-        <div class="about-container">
-            <div data-aos="fade-right" class="about-img">
+            <div class="about-container">
+                <div data-aos="fade-right" class="about-img">
+                </div>
+                <div data-aos="fade-left" class="about-content">
+                    <P>Myself, Sudip Das Ghosh. I am a full-stack developer, and I also create some educational and
+                        entertaining content on YouTube and Instagram. I want to teach some powerful skills like coding,
+                        graphic design, UI/UX design, and video editing to my Bengali brothers and sisters. <br>I am
+                        also
+                        fonder of an educational platform called GyanMool. On this platform, I teach coding, UI/UX
+                        design,
+                        and digital marketing. We have a team of 5 members who teach some extra-ordinary skills on
+                        GyanMool.
+                    </P>
+                    <button class="btn-1">Explore GyanMool <i class="fa-solid fa-angles-right"></i></button>
+                </div>
             </div>
-            <div data-aos="fade-left" class="about-content">
-                <P>Myself, Sudip Das Ghosh. I am a full-stack developer, and I also create some educational and
-                    entertaining content on YouTube and Instagram. I want to teach some powerful skills like coding,
-                    graphic design, UI/UX design, and video editing to my Bengali brothers and sisters. <br>I am also
-                    fonder of an educational platform called GyanMool. On this platform, I teach coding, UI/UX design,
-                    and digital marketing. We have a team of 5 members who teach some extra-ordinary skills on GyanMool.
-                </P>
-                <button class="btn-1">Explore GyanMool <i class="fa-solid fa-angles-right"></i></button>
+        </section>
+        <!-- ======== SKILLS ======== -->
+        <section id="skills">
+            <div class="title">
+                <h2>SKILLS</h2>
             </div>
-        </div>
-    </section>
-    <!-- ======== SKILLS ======== -->
-    <section id="skills">
-        <div class="title">
-            <h2>SKILLS</h2>
-        </div>
-        <div class="skills-silder">
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/HTML.png" alt="">
+            <div class="skills-silder">
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/HTML.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/CSS.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/JS.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/BOOTSTRAP.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/REACT.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/MONGO.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/EXPRESS.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img class="img-fluid" src="./img/node-js.png" alt="">
+                </div>
             </div>
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/CSS.png" alt="">
+        </section>
+        <!-- ======== SERVICES ======== -->
+        <section id="services">
+            <div class="title">
+                <h2>SERVICES</h2>
             </div>
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/JS.png" alt="">
-            </div>
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/BOOTSTRAP.png" alt="">
-            </div>
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/REACT.png" alt="">
-            </div>
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/MONGO.png" alt="">
-            </div>
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/EXPRESS.png" alt="">
-            </div>
-            <div class="skill-img">
-                <img class="img-fluid" src="./img/node-js.png" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- ======== SERVICES ======== -->
-    <section id="services">
-        <div class="title">
-            <h2>SERVICES</h2>
-        </div>
-        <div class="services-container">
-            <div data-aos="zoom-in-down" class="card">
-                <div class="card-img"></div>
-                <h2>WEB DEVELOPMENT</h2>
-                <P>We deliver scalable and robust web development services to our clients, creating the desired web
-                    application for them.</P>
-                <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div data-aos="zoom-in-down" class="card">
-                <div class="card-img"></div>
-                <h2>UI/UX DESIGN</h2>
-                <P>We deliver scalable and robust web development services to our clients, creating the desired web
-                    application for them.</P>
-                <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div data-aos="zoom-in-down" class="card">
-                <div class="card-img"></div>
-                <h2>DIGITAL MARKETING</h2>
-                <P>We deliver scalable and robust web development services to our clients, creating the desired web
-                    application for them.</P>
-                <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-
-            <h3 class="see-all-btn">See all <i class="fa-solid fa-circle-chevron-down"></i></h3>
-
-            <div class="hide services-container">
+            <div class="services-container">
                 <div data-aos="zoom-in-down" class="card">
                     <div class="card-img"></div>
-                    <h2>COURSES</h2>
+                    <h2>WEB DEVELOPMENT</h2>
                     <P>We deliver scalable and robust web development services to our clients, creating the desired web
                         application for them.</P>
                     <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <div data-aos="zoom-in-down" class="card">
                     <div class="card-img"></div>
-                    <h2>VIDEO EDITING</h2>
+                    <h2>UI/UX DESIGN</h2>
                     <P>We deliver scalable and robust web development services to our clients, creating the desired web
                         application for them.</P>
                     <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <div data-aos="zoom-in-down" class="card">
                     <div class="card-img"></div>
-                    <h2>WEBSITE DESIGN</h2>
+                    <h2>DIGITAL MARKETING</h2>
                     <P>We deliver scalable and robust web development services to our clients, creating the desired web
                         application for them.</P>
                     <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
-            </div>
-            <h3 class="hide-all-btn see-all-btn">Hide <i class="fa-solid fa-circle-chevron-up"></i></h3>
-        </div>
-    </section>
 
-    <!-- ======== PROJECTS ======== -->
-    <section id="projects">
-        <div class="title">
-            <h2>PROJECTS</h2>
-        </div>
-        <div class="projects-container">
-            <div data-aos="flip-up" class="card">
-                <div class="card-img"></div>
-                <h2>AMAZON CLONE</h2>
-                <a href="https://devsudip07.github.io/amazon/" class="btn-1">See now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div data-aos="flip-up" class="card">
-                <div class="card-img"></div>
-                <h2>ST MUSIC</h2>
-                <a href="https://devsudip07.github.io/STMUSIC/" class="btn-1">See now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div data-aos="flip-up" class="card">
-                <div class="card-img"></div>
-                <h2>SPOTIFY CLONE</h2>
-                <a href="https://devsudip07.github.io/SPOTIFY/" class="btn-1">See now <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+                <h3 class="see-all-btn">See all <i class="fa-solid fa-circle-chevron-down"></i></h3>
 
-            <h3 class="see-all">See all <i class="fa-solid fa-circle-chevron-right"></i></h3>
-        </div>
-    </section>
-
-
-    <!-- ======== FEEDBACKS ======== -->
-    <section id="feedbacks">
-        <div class="title">
-            <h2>FEEDBACKS</h2>
-        </div>
-        <div class="review-container">
-            <div data-aos="zoom-in-left" class="user">
-                <div class="user-img">
-                    <img src="./img/BOY.jpg" alt="">
-                    <div class="name">
-                        <h3>Palash Halder</h3>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
+                <div class="hide services-container">
+                    <div data-aos="zoom-in-down" class="card">
+                        <div class="card-img"></div>
+                        <h2>COURSES</h2>
+                        <P>We deliver scalable and robust web development services to our clients, creating the desired
+                            web
+                            application for them.</P>
+                        <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div data-aos="zoom-in-down" class="card">
+                        <div class="card-img"></div>
+                        <h2>VIDEO EDITING</h2>
+                        <P>We deliver scalable and robust web development services to our clients, creating the desired
+                            web
+                            application for them.</P>
+                        <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div data-aos="zoom-in-down" class="card">
+                        <div class="card-img"></div>
+                        <h2>WEBSITE DESIGN</h2>
+                        <P>We deliver scalable and robust web development services to our clients, creating the desired
+                            web
+                            application for them.</P>
+                        <button class="btn-1">Explore more <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
-                <div class="content">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English.</p>
-                </div>
+                <h3 class="hide-all-btn see-all-btn">Hide <i class="fa-solid fa-circle-chevron-up"></i></h3>
             </div>
-            <div data-aos="zoom-in-left" class="user">
-                <div class="user-img">
-                    <img src="./img/BOY.jpg" alt="">
-                    <div class="name">
-                        <h3>Palash Halder</h3>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+        </section>
+
+        <!-- ======== PROJECTS ======== -->
+        <section id="projects">
+            <div class="title">
+                <h2>PROJECTS</h2>
+            </div>
+            <div class="projects-container">
+                <div data-aos="flip-up" class="card">
+                    <div class="card-img"></div>
+                    <h2>AMAZON CLONE</h2>
+                    <a href="https://devsudip07.github.io/amazon/" class="btn-1">See now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div data-aos="flip-up" class="card">
+                    <div class="card-img"></div>
+                    <h2>ST MUSIC</h2>
+                    <a href="https://devsudip07.github.io/STMUSIC/" class="btn-1">See now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div data-aos="flip-up" class="card">
+                    <div class="card-img"></div>
+                    <h2>SPOTIFY CLONE</h2>
+                    <a href="https://devsudip07.github.io/SPOTIFY/" class="btn-1">See now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <h3 class="see-all">See all <i class="fa-solid fa-circle-chevron-right"></i></h3>
+            </div>
+        </section>
+
+        <!-- ======== YOUTUBE ======== -->
+        <section id="youtube">
+            <div class="title">
+                <h2>YOUTUBE</h2>
+            </div>
+            <div class="yt-container">
+                <!-- Swiper -->
+                <div data-aos="zoom-in" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="yt-vid">
+                                <a href="https://youtu.be/rSAmFc_7vFo?si=mdYwB4AX95wtvR9d" target="_blank">
+                                    <iframe width="1536" height="864" src="https://www.youtube.com/embed/rSAmFc_7vFo"
+                                        title="HTML FULL TUTORIAL FOR BEGINNERS | FULL BEGINNERS FRIENDLY COURSE | HTML ONESHOT •"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    </iframe>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="yt-vid">
+                                <a href="https://youtu.be/rSAmFc_7vFo?si=mdYwB4AX95wtvR9d" target="_blank">
+                                    <iframe width="1536" height="864" src="https://www.youtube.com/embed/rSAmFc_7vFo"
+                                        title="HTML FULL TUTORIAL FOR BEGINNERS | FULL BEGINNERS FRIENDLY COURSE | HTML ONESHOT •"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    </iframe>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="content">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English.</p>
-                </div>
-            </div>
-            <div data-aos="zoom-in-left" class="user">
-                <div class="user-img">
-                    <img src="./img/BOY.jpg" alt="">
-                    <div class="name">
-                        <h3>Palash Halder</h3>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <!-- <span></span> -->
                     </div>
                 </div>
-                <div class="content">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English.</p>
-                </div>
             </div>
-            <div data-aos="zoom-in-left" class="user">
-                <div class="user-img">
-                    <img src="./img/BOY.jpg" alt="">
-                    <div class="name">
-                        <h3>Palash Halder</h3>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+        </section>
+
+        <!-- ======== FEEDBACKS ======== -->
+        <section id="feedbacks">
+            <div class="title">
+                <h2>FEEDBACKS</h2>
+            </div>
+            <div class="review-container">
+                <div data-aos="zoom-in-left" class="user">
+                    <div class="user-img">
+                        <img src="./img/BOY.jpg" alt="">
+                        <div class="name">
+                            <h3>Palash Halder</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
+                    <div class="content">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English.</p>
+                    </div>
                 </div>
-                <div class="content">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English.</p>
+                <div data-aos="zoom-in-left" class="user">
+                    <div class="user-img">
+                        <img src="./img/BOY.jpg" alt="">
+                        <div class="name">
+                            <h3>Palash Halder</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English.</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-left" class="user">
+                    <div class="user-img">
+                        <img src="./img/BOY.jpg" alt="">
+                        <div class="name">
+                            <h3>Palash Halder</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English.</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-left" class="user">
+                    <div class="user-img">
+                        <img src="./img/BOY.jpg" alt="">
+                        <div class="name">
+                            <h3>Palash Halder</h3>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ======== GET IN TOUCH ======== -->
-    <section id="get-in-touch">
-    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="form">
-        <div class="title">
-            <h2>GET IN TOUCH</h2>
-        </div>
-        <form action="">
-            <input type="text" placeholder="Full Name" required>
-            <input type="number" placeholder="Phone Number" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="text" placeholder="Your Profession" required>
-            <input id="message" type="text" placeholder="Message" required>
-            <button class="send">Send <i class="fa-solid fa-paper-plane"></i></button>
-        </form>
-    </div>
-    </section>
+        <!-- ======== GET IN TOUCH ======== -->
+        <section id="get-in-touch">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="form">
+                <div class="title">
+                    <h2>GET IN TOUCH</h2>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="number" placeholder="Phone Number" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Your Profession" required>
+                    <input id="message" type="text" placeholder="Message" required>
+                    <button class="send">Send <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
 
-
+    </main>
 
 
 
@@ -367,6 +437,8 @@
     </script>
     <!-- ============= text animation js ============= -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ============= CUSTOM js ============= -->
     <script src="script.js"></script>
 
