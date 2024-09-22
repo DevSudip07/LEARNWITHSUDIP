@@ -2,75 +2,105 @@
 function loader() {
     var loader = document.querySelector(".loader");
     var main = document.querySelector('main');
-    
+
     setTimeout(function load() {
-      loader.style.display = "none";
-      main.style.position = "relative";
+        loader.style.display = "none";
+        main.style.position = "relative";
     }
-    , 2000);
+        , 2000);
 };
 
+loader();
 
+// ============= CALL BUTTON =============
+function callButton() {
+    var callBtn = document.querySelector('#call-btn');
+    callBtn.addEventListener('click', () => {
+        document.location.href = "tel:+917001894943";
+    });
+};
+
+callButton();
+
+// ============= GYANMOOL BUTTON =============
+function gyanmoolButton() {
+    var gyanmoolButton = document.querySelector('#gyanmool-btn');
+    gyanmoolButton.addEventListener('click', () => {
+        window.location = 'https://jonitecheducation.netlify.app/';
+    });
+};
+
+gyanmoolButton();
+
+// ============= YOUTUBE =============
 // <!-- Initialize Swiper -->
-  const progressCircle = document.querySelector(".autoplay-progress svg");
-  const progressContent = document.querySelector(".autoplay-progress span");
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 10000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    // on: {
-    //   autoplayTimeLeft(s, time, progress) {
-    //     progressCircle.style.setProperty("--progress", 1 - progress);
-    //     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-    //   }
-    // }
-  });
+function ytVideo() {
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        // on: {
+        //   autoplayTimeLeft(s, time, progress) {
+        //     progressCircle.style.setProperty("--progress", 1 - progress);
+        //     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        //   }
+        // }
+    });
+};
+
+ytVideo();
 
 // ============= MOBILE NAVBER =============
-function resNav(){
+function resNav() {
     var menuIcon = document.querySelector('header h1');
     var closeIcon = document.querySelector('aside h1');
     var menu = document.querySelector('aside');
-    var servicesMenu  = document.querySelector('.services-menu');
-    var dropMenu  = document.querySelector('.drop');
-    var arrow  = document.querySelector('.services-menu span');
-    var allBody  = document.querySelector('body');
+    var servicesMenu = document.querySelector('.services-menu');
+    var dropMenu = document.querySelector('.drop');
+    var arrow = document.querySelector('.services-menu span');
+    var allBody = document.querySelector('body');
 
-    menuIcon.addEventListener('click', ()=> {
+    menuIcon.addEventListener('click', () => {
         menu.style.right = '0px';
         allBody.style.position = 'fixed';
     });
-    closeIcon.addEventListener('click', ()=> {
+    closeIcon.addEventListener('click', () => {
         menu.style.right = '-500px';
         allBody.style.position = 'relative';
     });
-    
-    servicesMenu.addEventListener('click', ()=> {
+
+    servicesMenu.addEventListener('click', () => {
         dropMenu.style.display = 'block';
         arrow.innerHTML = `<i class="fa-solid fa-chevron-up"></i>`;
     });
 };
 
+resNav();
+
 // ============= BANNER TEXT ANIMATION =============
 function textAnimation() {
     var typed = new Typed(".proff", {
         strings: ["Full Stack Developer...", "UI/UX Designer...", "YouTuber..."],
-        typeSpeed: 150,
-        backSpeed: 150,
+        typeSpeed: 100,
+        backSpeed: 100,
         loop: true
     });
 };
+
+textAnimation();
 
 // ============= SKILLS SLIDER =============
 function skillSlider() {
@@ -113,6 +143,8 @@ function skillSlider() {
     });
 }
 
+skillSlider();
+
 // ============= SEE ALL BUTTON =============
 function seeAllBtn() {
     var seeAll = document.querySelector(".see-all-btn");
@@ -131,6 +163,8 @@ function seeAllBtn() {
         hideBtn.style.display = 'none';
     });
 };
+
+seeAllBtn();
 
 // ============= FEEDBACKS =============
 function review() {
@@ -176,6 +210,8 @@ function review() {
     });
 };
 
+review();
+
 // ============= AOS MOBILE =============
 // AOS.init({disable: 'mobile'});+
 
@@ -183,9 +219,3 @@ function review() {
 
 
 
-loader();
-resNav();
-review();
-textAnimation();
-skillSlider();
-seeAllBtn();
