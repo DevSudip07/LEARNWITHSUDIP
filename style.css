@@ -46,6 +46,41 @@ ul {
     background: var(--praimary);
 } */
 
+/* ======== DARK MODE ======== */
+.dark-btn {
+    color: rgb(249, 220, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#dark-moon {
+    color: rgb(38, 38, 38);
+}
+
+.dark-mode {
+    background-color: rgb(45, 45, 45);
+    color: white;
+
+    & .services-container .card {
+        background-color: rgb(0, 0, 0);
+    }
+    & .projects-container .card {
+        background-color: rgb(0, 0, 0);
+    }
+    &  .review-container .user {
+        background-color: rgb(0, 0, 0);
+    }
+    &  nav a {
+        color: white;
+    }
+    &  header a {
+        color: white;
+    }
+    & .form form input {
+        opacity: 60%;
+    }
+}
+
 /* ======== NAV BUTTON ======== */
 .btn-1 {
     --color: #0077ff;
@@ -196,6 +231,12 @@ header {
 
     & h1 {
         font-size: 8vw;
+    }
+
+    & .res-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
     }
 }
 

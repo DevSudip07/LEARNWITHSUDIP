@@ -12,6 +12,43 @@ function loader() {
 
 loader();
 
+// ============= DARK MODE =============
+
+function darkMode() {
+    var darkBtn = document.querySelector('.dark-btn');
+    var mobdarkBtn = document.querySelector('.mob-dark-btn');
+
+    var dark = 1;
+
+    // ============= FOR MOBILE =============
+    mobdarkBtn.addEventListener('click', () => {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        if (dark == 1) {
+            mobdarkBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+            dark = 0;
+        } else {
+            mobdarkBtn.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+            dark = 1;
+        }
+    });
+
+    // ============= FOR DESKTOP =============
+    darkBtn.addEventListener('click', () => {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        if (dark == 1) {
+            darkBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+            dark = 0;
+        } else {
+            darkBtn.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+            dark = 1;
+        }
+    });
+};
+
+darkMode();
+
 // ============= CALL BUTTON =============
 function callButton() {
     var callBtn = document.querySelector('#call-btn');
