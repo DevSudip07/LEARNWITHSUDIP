@@ -447,6 +447,10 @@ nav {
     & img {
         width: 60px;
     }
+
+    & .slick-next:before {
+        content: '';
+    }
 }
 
 /* ======== SERVICES ======== */
