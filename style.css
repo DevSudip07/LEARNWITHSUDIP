@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     z-index: 9;
+    transition: ease-in-out .5s;
 }
 
 main {
@@ -60,6 +61,7 @@ ul {
 .dark-mode {
     background-color: rgb(45, 45, 45);
     color: white;
+    transition: ease-in-out .5s;
 
     & .services-container .card {
         background-color: rgb(0, 0, 0);
