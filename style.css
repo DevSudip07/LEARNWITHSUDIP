@@ -14,6 +14,20 @@ body {
     transition: ease-in-out .5s;
 }
 
+button,
+a,
+input,
+select,
+textarea,
+h1 {
+    /* For iOS */
+    -webkit-tap-highlight-color: transparent;
+    /* For Android */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* To remove focus outline */
+    outline: none;
+}
+
 main {
     position: fixed;
 }
@@ -47,6 +61,28 @@ ul {
     background: var(--praimary);
 } */
 
+/* ======== BACK TO TOP BUTTON ======== */
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    width: 3vw;
+    height: 6.5vh;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    right: 2vw;
+    bottom: 5vh;
+    color: white;
+    background: linear-gradient(#8661FF, #E42A81);
+    cursor: pointer;
+}
+
+.b-t-t-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ======== DARK MODE ======== */
 .dark-btn {
     color: rgb(249, 220, 0);
@@ -66,18 +102,23 @@ ul {
     & .services-container .card {
         background-color: rgb(0, 0, 0);
     }
+
     & .projects-container .card {
         background-color: rgb(0, 0, 0);
     }
-    &  .review-container .user {
+
+    & .review-container .user {
         background-color: rgb(0, 0, 0);
     }
-    &  nav a {
+
+    & nav a {
         color: white;
     }
-    &  header a {
+
+    & header a {
         color: white;
     }
+
     & .form form input {
         opacity: 60%;
     }
@@ -293,6 +334,7 @@ nav {
     align-items: center;
     padding: 15px 50px;
     z-index: 99;
+    background-color: white;
 
     & .logo a h2 {
         font-family: Georgia, 'Times New Roman', Times, serif;
