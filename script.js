@@ -1,3 +1,27 @@
+var desktopNav = document.querySelector('nav');
+var mobNav = document.querySelector('header');
+
+
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    desktopNav.classList.add('scroll-nav-desktop');
+    desktopNav.style.padding = '5px 50px';
+    mobNav.classList.add('scroll-nav-desktop');
+  } else {
+    desktopNav.classList.remove('scroll-nav-desktop');
+    mobNav.classList.remove('scroll-nav-desktop');
+  }
+}
+
+
+
+
+
+
 // ============= LOADER =============
 function loader() {
     var loader = document.querySelector(".loader");

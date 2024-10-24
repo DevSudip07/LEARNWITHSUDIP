@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Neue Machina;
+    /* font-family: url(NeueMachina-Regular_DQCmjH1st.ttf); */
 }
 
 html,
@@ -267,6 +268,7 @@ header {
     align-items: center;
     padding: 0px 20px;
     z-index: 99;
+    transition: .5s ease-in-out;
 
     & .logo a h2 {
         font-size: 5vw;
@@ -286,7 +288,7 @@ header {
 aside {
     display: none;
     width: 70%;
-    height: 93vh;
+    height: 100vh;
     position: absolute;
     top: 0px;
     right: -500px;
@@ -329,11 +331,13 @@ aside {
 
 /* ======== NAVBER ======== */
 nav {
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
     z-index: 99;
+    transition: .5s ease;
 
     & .logo a h2 {
         font-family: Neue Machina;
@@ -372,7 +376,7 @@ nav {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10.5px);
         -webkit-backdrop-filter: blur(10.5px);
-        border: 1px solid rgba(219, 149, 255, 0.3);
+        /* border: 1px solid rgba(219, 149, 255, 0.3); */
         top: 75px;
         z-index: 99;
     }
@@ -388,6 +392,17 @@ nav {
         display: block;
     }
 
+}
+
+.scroll-nav-desktop {
+    position: fixed;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    transition: .5s ease-in;
 }
 
 /* ======== BANNER ======== */
