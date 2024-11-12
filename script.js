@@ -151,6 +151,14 @@ function resNav() {
 
 resNav();
 
+// ============= MOBILE NAVBER =============
+var cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (dets)=>{
+    cursor.style.left = dets.x-15  + 'px';
+    cursor.style.top = dets.y-15  + 'px';
+
+})
+
 // ============= BANNER TEXT ANIMATION =============
 function textAnimation() {
     var typed = new Typed(".proff", {
